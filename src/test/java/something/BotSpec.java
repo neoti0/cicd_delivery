@@ -29,7 +29,7 @@ class BotSpec {
     @Test
     void BotReplyじゃんけん_ぐー() {
         var bot = new Bot();
-        var response = bot.onMentionedMessagePosted("じゃんけん ぐー", "", "");
+        var response = bot.onMentionedMessagePosted("ぐー", "", "");
         Assertions.assertEquals(response.isEmpty(), false);
     }
 }
