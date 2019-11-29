@@ -27,6 +27,27 @@ class BotSpec {
     }
 
     @Test
+    void BotReplyFizzBuzz_3() {
+        var bot = new Bot();
+        var response = bot.onMessagePosted("FizzBuzz 3", "", "");
+        Assertions.assertEquals(Optional.of("Fizz"), response);
+    }
+
+    @Test
+    void BotReplyFizzBuzz_5() {
+        var bot = new Bot();
+        var response = bot.onMessagePosted("FizzBuzz 5", "", "");
+        Assertions.assertEquals(Optional.of("Bazz"), response);
+    }
+
+    @Test
+    void BotReplyFizzBuzz_15() {
+        var bot = new Bot();
+        var response = bot.onMessagePosted("FizzBuzz 15", "", "");
+        Assertions.assertEquals(Optional.of("FizzBazz"), response);
+    }
+
+    @Test
     void BotReplyじゃんけん_ぐー() {
         var bot = new Bot();
         var response = bot.onMentionedMessagePosted("ぐー", "", "");
