@@ -1,4 +1,4 @@
-# java-slack-bot
+# a-team-bot
 ## setup
 ### heroku
 ```shell script
